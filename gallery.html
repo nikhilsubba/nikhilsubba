@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nikhil Subba</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <div class="topnav" id="myTopnav">
+          <div class="heading">
+            <img style="float:left;" width="110" height="48" src="img/logo.png" alt="logo">
+            <h1 class="hdh1">Nikhil SUBBA.com<h1>
+          </div>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">Movies/TV Shows
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="listofmovies.html">List of Movies</a>
+              <a href="listoftvshows.html">List of TV Shows</a>
+            </div>
+            </div>
+          <a href="experience.html">Experience</a>
+          <a href="announcement.html">Announcement</a>
+            <a href="education.html">Education</a>
+            <a href="resume.html">Resume</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <div class="search-container">
+              <form action="#home">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit">Search</button>
+              </form>
+            </div>
+        </div>
+        <div style="text-align:center">
+  <h2>Gallery About Me</h2>
+  <p>And My Interest</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="img/7.png" alt="Me" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/8.png" alt="Me" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/9.png" alt="Anime" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/10.png" alt="Me" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/15.png" alt="My Panting" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/16.png" alt="ME" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/17.png" alt="Me With My Friends" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+      </div>
+        <div class="footer">
+          <pre><a href="contact.html"><b>Contact Me to give feedback</b></a>                                       Get Social With Me <a target="_blank" href="https://www.facebook.com/people/Namhang-Subba/100009323236630" class="fa fa-facebook"></a> <a target="_blank" href="https://www.instagram.com/nikhil_neyleigh/" class="fa fa-instagram"></a>                                      Copyright © 2019 <strong><a target="_blank" href="index.html">Nikhil Subba</a></strong>.</pre>
+        </div>
+    </div>
+
+  </body>
+</html>
